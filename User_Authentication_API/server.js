@@ -4,6 +4,10 @@ const dotenv = require("dotenv");
 const cors = require("cors");
 const authMiddleware = require("./middleware/authMiddleware");
 
+// DNS configuration
+const dns = require("dns");
+dns.setServers(["1.1.1.1", "8.8.8.8"]);
+
 console.log("THIS IS MY NOTES APP SERVER");
 
 dotenv.config();
